@@ -55,10 +55,8 @@ public class BJ2578 {
 		int count = 0;
 		for (int i = 0; i < N; i++) {
 			for (int j = 0; j < N; j++) {
-				if (!arr[i][j])
-					break;
-				if (j == N - 1)
-					count++;
+				if (!arr[i][j])		break;
+				if (j == N - 1)		count++;
 			}
 		}
 		return count;
@@ -69,10 +67,8 @@ public class BJ2578 {
 		int count = 0;
 		for (int j = 0; j < N; j++) {
 			for (int i = 0; i < N; i++) {
-				if (!arr[i][j])
-					break;
-				if (i == N - 1)
-					count++;
+				if (!arr[i][j])		break;
+				if (i == N - 1)		count++;
 			}
 		}
 		return count;
@@ -90,8 +86,7 @@ public class BJ2578 {
 				break;
 			}
 		}
-		if (mainDiagonal)
-			count++;
+		if (mainDiagonal)	count++;
 
 		// 부대각선 (↙) 체크
 		boolean subDiagonal = true;
@@ -101,8 +96,7 @@ public class BJ2578 {
 				break;
 			}
 		}
-		if (subDiagonal)
-			count++;
+		if (subDiagonal)	count++;
 
 		return count;
 	}
